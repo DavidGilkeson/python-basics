@@ -46,17 +46,17 @@
 #             temp_list.append(list1[i-1][j-1]+list1[i-1][j]) 
 #     list1.append(temp_list)
     
-n=int(input("Enter a number: "))
-list1=[]
-for i in range(n):
-    temp_list=[]
-    for j in range(i+1):
-        if j==0 or j==i:
-            temp_list.append(1)
-        else:
-            temp_list.append(list1[i-1][j-1]+list1[i-1][j]) 
-    list1.append(temp_list)
-print(list1)
+# n=int(input("Enter a number: "))
+# list1=[]
+# for i in range(n):
+#     temp_list=[]
+#     for j in range(i+1):
+#         if j==0 or j==i:
+#             temp_list.append(1)
+#         else:
+#             temp_list.append(list1[i-1][j-1]+list1[i-1][j]) 
+#     list1.append(temp_list)
+# print(list1)
 # for i in range(n):
 #     for j in range(n-i-1):
 #         print (format(" ", "<2"), end="")
@@ -76,5 +76,15 @@ print(list1)
 #             temp_list.append(list1[i-1][j-1]+list1[i-1][j]) 
 #     list1.append(temp_list)
 # print(list1)
+import pprint
+
+message = "It was a bright cold day in April and the clocks were striking thirteen"
+count = {}
+
+for char in message:
+    count.setdefault(char, 0)
+    count[char] = count[char] + 1
+    
+pprint.pprint(count)
 
 
