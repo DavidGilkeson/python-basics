@@ -208,3 +208,92 @@ thistuple = tuple(y)
 thistuple = ("apple", "banana", "cherry")
 del thistuple
 # print(thistuple) #this will raise an error because the tuple no longer exists
+
+
+# Unpack Tuples
+# Unpacking a Tuple
+# When we create a tuple, we normally assign values to it. This is called "packing" a tuple:
+
+# Packing a tuple:
+
+fruits = ("apple", "banana", "cherry")
+
+# But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":
+
+# Unpacking a tuple:
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# Note: The number of variables must match the number of values in the tuple, if not, you must use an asterix to collect the remaining values as a list.
+
+# Using Asterix*
+
+# If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:
+
+# Assign the rest of the values as a list called "red":
+
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+
+(green, yellow, *red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+# If the asterix is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.
+
+# Add a list of values the "tropic" variable:
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
+
+# Loop Tuples
+# Loop Through a Tuple
+# You can loop through the tuple items by using a for loop.
+
+# Iterate through the items and print the values:
+
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+  
+  
+# Learn more about for loops in our Python For Loops Chapter.
+
+# Loop Through the Index Numbers
+# You can also loop through the tuple items by referring to their index number.
+
+# Use the range() and len() functions to create a suitable iterable.
+
+# Print all items by referring to their index number:
+
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+  
+  
+# Using a While Loop
+# You can loop through the list items by using a while loop.
+
+# Use the len() function to determine the length of the tuple, then start at 0 and loop your way through the tuple items by refering to their indexes.
+
+# Remember to increase the index by 1 after each iteration.
+
+# Print all items, using a while loop to go through all the index numbers:
+
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
