@@ -16,7 +16,7 @@ import re
 # Example
 # Search the string to see if it starts with "The" and ends with "Spain":
 
-txt = "The rain in Spain"
+txt = "The rain in Spain1"
 x = re.search("^The.*Spain$", txt)
 print(x)
 
@@ -89,7 +89,7 @@ print(x)
 # Print a list of all matches:
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain2"
 x = re.findall("ai", txt)
 print(x)
 
@@ -99,7 +99,7 @@ print(x)
 
 # Return an empty list if no match was found:
 
-txt = "The rain in Spain"
+txt = "The rain in Spain3"
 x = re.findall("jgjh", txt)
 print(x)
 
@@ -121,7 +121,7 @@ print("The first white-space character is located in position:", x.start())
 # Make a search that returns no match:
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain4"
 x = re.search("Portugal", txt)
 print(x)
 
@@ -130,7 +130,7 @@ print(x)
 
 # Split at each white-space character:
 
-txt = "The rain in Spain"
+txt = "The rain in Spain7"
 x = re.split("\s", txt)
 print(x)
 
@@ -138,7 +138,7 @@ print(x)
 # Split the string only at the first occurrence:
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain8"
 x = re.split("\s", txt, 1)
 print(x)
  
@@ -147,7 +147,7 @@ print(x)
 
 # Replace every white-space character with the number 9:
 
-txt = "The rain in Spain"
+txt = "The rain in Spain9"
 x = re.sub("\s", "9", txt)
 print(x)
 # You can control the number of replacements by specifying the count parameter:
@@ -156,7 +156,7 @@ print(x)
 
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain10"
 x = re.sub("\s", "9", txt, 2)
 print(x)
  
@@ -168,7 +168,7 @@ print(x)
 # Do a search that will return a Match Object:
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain12"
 x = re.search("ai", txt)
 print(x) #this will print an object
 
@@ -183,14 +183,14 @@ print(x) #this will print an object
 # The regular expression looks for any words that starts with an upper case "S":
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain5"
 x = re.search(r"\bS\w+", txt)
 print(x.span())
 
 # Print the string passed into the function:
 
 
-txt = "The rain in Spain"
+txt = "The rain in Spain6"
 x = re.search(r"\bS\w+", txt)
 print(x.string)
 
